@@ -134,6 +134,7 @@ ul { list-style: none; }
     justify-content: center;
     overflow: hidden;
     background-color: var(--bg-primary);
+    padding-top: 80px; /* Compensa la altura del navbar fijo */
 }
 
 .hero::before {
@@ -171,7 +172,7 @@ ul { list-style: none; }
     width: 100%;
     text-align: center;
     padding: 0 20px;
-    margin: 0 auto;
+    /* Se eliminó margin: 0 auto porque el flex del hero ya centra */
 }
 
 .hero-title {
@@ -188,6 +189,9 @@ ul { list-style: none; }
     margin-bottom: 40px;
     text-align: center;
     text-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero .btn {
