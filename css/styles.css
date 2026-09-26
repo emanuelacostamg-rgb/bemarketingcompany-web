@@ -116,7 +116,7 @@ ul { list-style: none; }
 
 /* Hero con David y halo */
 .hero {
-    position: relative;
+    position: absolute;
     min-height: 100vh;
     display: flex;
     align-items: center;
