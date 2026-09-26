@@ -41,13 +41,16 @@ ul { list-style: none; }
 .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
 .btn-full { width: 100%; text-align: center; }
 
-/* Navbar */
+/* Navbar con efecto vidrio */
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(11, 14, 11, 0.85);
-    backdrop-filter: blur(12px);
+    background-color: rgba(11, 14, 11, 0.15); /* Opacidad muy baja */
+    backdrop-filter: blur(16px) saturate(140%); /* Blur + saturación para efecto vidrio real */
+    -webkit-backdrop-filter: blur(16px) saturate(140%); /* Safari */
+    border-bottom: 1px solid rgba(138, 150, 120, 0.15); /* Borde sutil translúcido */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Sombra suave */
     z-index: 1000;
     padding: 20px 0;
 }
