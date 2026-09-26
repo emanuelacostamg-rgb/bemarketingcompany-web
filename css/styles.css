@@ -43,17 +43,15 @@ ul { list-style: none; }
 
 /* Navbar */
 .navbar {
-    position: fixed; top: 0; width: 100%; background-color: rgba(11, 14, 11, 0.85);
-    backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-color);
-    z-index: 1000; padding: 16px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(11, 14, 11, 0.85);
+    backdrop-filter: blur(12px);
+    /* border-bottom eliminado */
+    z-index: 1000;
+    padding: 20px 0;
 }
-.nav-container { display: flex; justify-content: space-between; align-items: center; }
-.logo { display: flex; align-items: center; gap: 10px; font-family: var(--font-heading); font-weight: 800; font-size: 1.5rem; color: var(--text-primary); }
-.logo-img { width: 40px; height: 40px; }
-.nav-menu { display: flex; gap: 32px; }
-.nav-link { font-size: 0.95rem; color: var(--text-secondary); font-weight: 500; }
-.nav-link:hover { color: var(--accent); }
-.nav-toggle { display: none; background: none; border: none; color: var(--text-primary); cursor: pointer; }
 
 /* Hero */
 .hero {
